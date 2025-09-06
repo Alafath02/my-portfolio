@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
   id="about"
-  className="min-h-screen bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 px-6 py-20 flex flex-col items-center"
+  className="min-h-screen bg-[#0f172a] text-white px-6 py-20 flex flex-col items-center"
 >
   <motion.h2
     className="text-4xl font-bold mb-10 text-center"

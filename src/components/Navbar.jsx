@@ -1,22 +1,14 @@
-import React, { useState, useEffect } from 'react';
+
 import { Link } from 'react-scroll'; // install with: npm install react-scroll
 
 function Navbar() {
-  const [darkMode, setDarkMode] = useState(true);
 
-  useEffect(() => {
-    const root = window.document.documentElement;
-    if (darkMode) {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
-  }, [darkMode]);
+
 
   return (
     <header className="p-6 bg-gray-800 text-center shadow-md flex flex-col sm:flex-row justify-between items-center">
       <div>
-        <h1 className="text-3xl font-extrabold text-center font-serif tracking-wide">AL AFATH A</h1>
+        <h1 className="text-3xl text-gray-300 font-extrabold text-center font-serif tracking-wide">AL AFATH A</h1>
         <p className="text-gray-300 mt-1">Software Developer | Web Developer</p>
       </div>
 
@@ -36,12 +28,7 @@ function Navbar() {
 
 
 
-      <button
-        onClick={() => setDarkMode(!darkMode)}
-        className="bg-gray-600 text-white px-3 py-1 rounded-md hover:bg-gray-700 mt-4 sm:mt-0 sm:ml-4"
-      >
-        {darkMode ? '☀️ Light' : '🌙 Dark'}
-      </button>
+      
     </header>
   );
 }

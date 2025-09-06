@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen bg-[#0f172a] text-white flex flex-col items-center justify-center px-4">
+    <section className="min-h-screen bg-[#0f172a] text-white flex flex-col items-center justify-center px-4 ">
 <motion.img
   src="/photo.jpg"
   alt="Al Afath A"
