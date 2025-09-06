@@ -1,6 +1,6 @@
 import React from "react";
 import squidGame from "../assets/squid-game.jpeg";
-import portfolioScreenshot from "../assets/portfolio-screenshot.png";
+import portfolioScreenshot from "../assets/deployimage.png";
 
 const Projects = () => {
   const projects = [
@@ -9,8 +9,8 @@ const Projects = () => {
       title: "My Portfolio Website",
       description: "A personal portfolio website built with React, showcasing my projects and skills.",
       image: portfolioScreenshot,
-      demoLink: "https://your-portfolio-url.vercel.app",  // 🔁 Replace with actual live link
-      codeLink: "https://github.com/Teddy-ff/React-portfolio",   // 🔁 Replace with your GitHub repo
+      demoLink: "my-portfolio-three-flame-65.vercel.app",  // 🔁 Replace with actual live link
+      codeLink: "https://github.com/Alafath02/my-portfolio",   // 🔁 Replace with your GitHub repo
     },
     {
       id: 2,
