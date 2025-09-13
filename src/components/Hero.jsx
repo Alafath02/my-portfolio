@@ -67,7 +67,7 @@ export default function Hero() {
           LinkedIn
         </a>
         <a
-          href="/AL-AFATH-CV-Resume.pdf"
+          href="/Alafathcv.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-600 text-white px-6 py-2 rounded-full font-semibold shadow-md hover:bg-green-700 transition"
