@@ -23,7 +23,7 @@ export default function About() {
   >
     <p>
       Hello! I'm <span className="font-semibold text-blue-500">Al Afath A</span>,
-      a passionate Web Developer with 1.5 years of experience in building
+      a passionate Web Developer with 2 years of experience in building
       creative and functional web applications. I specialize in
       <span className="font-medium text-green-500"> Java</span>,
       <span className="font-medium text-yellow-500"> Spring Boot</span>, and

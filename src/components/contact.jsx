@@ -1,27 +1,11 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Thank you! This form doesn't send emails yet.");
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   return (
-    <section className="bg-gray-900 py-16 px-4 text-white" id="contact">
+    <section className="bg-gray-900 py-20 px-4 text-white" id="contact">
       <div className="max-w-3xl mx-auto">
         <motion.h2
-          className="text-3xl font-bold text-center mb-8"
+          className="text-4xl font-bold text-center mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -29,56 +13,54 @@ export default function Contact() {
           Contact Me
         </motion.h2>
 
-        <motion.form
-          onSubmit={handleSubmit}
-          className="bg-gray-800 p-8 rounded-2xl shadow-lg space-y-6"
+        <motion.div
+          className="bg-gray-800 p-12 rounded-2xl shadow-xl space-y-6 text-lg min-h-[350px] flex flex-col justify-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div>
-            <label className="block mb-2 text-sm font-medium">Name</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-2 bg-gray-900 rounded-lg border border-gray-700 text-white"
-            />
-          </div>
+          <p>
+            <span className="font-semibold">📧 Email:</span>{" "}
+            <a
+              href="mailto:alafth.jun02@gmail.com"
+              className="text-indigo-400 hover:underline"
+            >
+              alafth.jun02@gmail.com
+            </a>
+          </p>
 
-          <div>
-            <label className="block mb-2 text-sm font-medium">Email</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-2 bg-gray-900 rounded-lg border border-gray-700 text-white"
-            />
-          </div>
+          <p>
+            <span className="font-semibold">📱 Phone:</span> +91 7826990748
+          </p>
 
-          <div>
-            <label className="block mb-2 text-sm font-medium">Message</label>
-            <textarea
-              name="message"
-              rows="4"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-2 bg-gray-900 rounded-lg border border-gray-700 text-white"
-            />
-          </div>
+          <p>
+            <span className="font-semibold">🔗 LinkedIn:</span>{" "}
+            <a
+              href="https://www.linkedin.com/in/alafath13/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-400 hover:underline"
+            >
+              linkedin.com/in/alafath13/
+            </a>
+          </p>
 
-          <button
-            type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-500 transition-all duration-300 py-2 rounded-lg font-semibold"
-          >
-            Send Message
-          </button>
-        </motion.form>
+          <p>
+            <span className="font-semibold">💻 GitHub:</span>{" "}
+            <a
+              href="https://github.com/Alafath02"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-400 hover:underline"
+            >
+              github.com/Alafath02
+            </a>
+          </p>
+
+          <p>
+            <span className="font-semibold">📍 Location:</span> Chennai, India
+          </p>
+        </motion.div>
       </div>
     </section>
   );
